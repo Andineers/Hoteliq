@@ -51,37 +51,120 @@
       <section class="section-booking">
         <div class="booking">
             <h2>Book a Room</h2>
-            <p>Discover the perfect space for you</p>
+            <p>Discover the perfect space for you!</p>
             <div class="booking-form">
+                <!-- Date Section -->
                 <div class="form-group">
-                  <p>Date</p>
-                    <!-- <label class="" for="date"><i class="ri-calendar-line"></i>Date</label> -->
-                    <input type="date" id="date" placeholder="Check Availability" />
-                </div>
-                <div class="form-group">
-                    <label for="adults"><i class="ri-group-line"></i>Person</label>
-                    <div class="person-selection">
-                        <label for="adults">Adults</label>
-                        <select id="adults">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                        <label for="children">Children</label> 
-                        <select id="children">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
+                    <p>Date</p>
+                    <div class="date-container">
+                        <i class="ri-calendar-line calendar-icon"></i>
+                        <input type="date" id="date" placeholder="Check Available" />
                     </div>
                 </div>
+                <!-- Person Section -->
+                <div class="form-group">
+                    <p>Person</p>
+                    <div class="person-selection">
+                        <!-- Adults Section -->
+                        <div class="person-box">
+                            <i class="ri-user-line person-icon"></i>
+                            <span>Adults</span>
+                            <select id="adults">
+                                <option value="1">1</option>
+                                <option value="2" selected>2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <!-- Children Section -->
+                        <div class="person-box">
+                            <i class="ri-emotion-happy-line person-icon"></i>
+                            <span>Children</span>
+                            <select id="children">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book Now Button -->
                 <button class="bookBtn">BOOK NOW</button>
             </div>
         </div>
     </section>
     
-    </main>
+    <section class="fasilities">
+      <div class="facility-grid">
+        <div class="facility-item">
+          <img src="assets/rooms.png" alt="Rooms">
+          <h3>Rooms</h3>
+        </div>
+        <div class="facility-item">
+          <img src="assets/dining.png" alt="Dining">
+          <h3>Dining</h3>
+        </div>
+        <div class="facility-item">
+          <img src="assets/meetings.png" alt="Conferences & Meetings">
+          <h3>Conferences & Meetings</h3>
+        </div>
+        <div class="facility-item">
+          <img src="assets/service.png" alt="Service & Facilities">
+          <h3>Service & Facilities</h3>
+        </div>
+        <div class="facility-item">
+          <img src="assets/wedding.png" alt="Wedding Package">
+          <h3>Wedding Package</h3>
+        </div>
+      </div>
+    </section>
+    
+    <section class="special-offers">
+      <h2>Best Offer of the Month</h2>
+      <p>Experience fantastic benefits and obtain better rates when booking on our official website.</p>
+      <div class="offer-grid">
+        <div class="offer-item">
+          <img src="assets/honeymoon.png" alt="Honeymoon">
+          <h3>Honeymoon</h3>
+          <p>$699 / night</p>
+        </div>
+        <div class="offer-item">
+          <img src="assets/mertings2.png" alt="Meetings">
+          <h3>Meetings</h3>
+          <p>$999 / night</p>
+        </div>
+        <div class="offer-item">
+          <img src="assets/romanticDining.png" alt="Romantic Dining">
+          <h3>Romantic Dining</h3>
+          <p>$499 / package</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <div class="footer-container">
+    <div class="newsletter">
+      <h3>Newsletter & Special Promo</h3>
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-logo">
+      <h2>Hotel Logo</h2>
+    </div>
+  </div>
+  <p>&copy; 2024 Booking Hotels. All rights reserved.</p>
+</footer>
 
     <script src="main.js"></script>
   </body>
