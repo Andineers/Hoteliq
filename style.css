@@ -1,7 +1,39 @@
---yellow: #F6BD26;
---primary-100: #2179FF;
---primary-90: #2179FF;
---primary-80: #2179FF;
---primary-70: #2179FF;
---primary-40: #2179FF;
---primary-20: #2179FF;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #254d4d;
+    --text-ligth: #737373;
+    --extra-ligth: #f4f6f5;
+    --max-width: 1200px;
+    --header-font: 'Poppins';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section_container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem irem;
+}
+
+.section_header {
+    font-family: var(--header-font);
+    margin-bottom: 1 rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.section_description {
+    font-size: 1.1rem;
+    color: var(--extra-ligth);
+}
+
+.logo {
+    width: 100px;
+    
+}
