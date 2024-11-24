@@ -19,28 +19,69 @@
     <header>
       <nav>
         <div class="nav_header">
-          <div class="nav_logo">
-            <img src="assets/logow.png" alt="" />
-            <a href="#" class="logo">Andiniventory</a>
-          </div>
-          <div class="nav_menuBtn" id="menu-btn">
+          <ul class="menu">
+            <li><a href="#home"></a>Home</li>
+            <li><a href="#about"></a>About</li>
+            <li><a href="#newsletter"></a>Newsletter</li>
+            <img src="assets/Logo.png" class="logo" alt="" />
+            <li><a href="#rooms"></a>Rooms</li>
+            <li><a href="#service"></a>Service</li>
+            <li><a href="#pricing"></a>Pricing</li>
+          </ul>
+
+          <!-- <div class="nav_menuBtn" id="menu-btn">
             <i class="ri-menu-line"></i>
-          </div>
+          </div> -->
         </div>
-        <ul>
-          <li><a href="#home"></a>Home</li>
-          <li><a href="#about"></a>About</li>
-          <li><a href="#newsletter"></a>Newsletter</li>
-          <li><a href="#rooms"></a>Rooms</li>
-          <li><a href="#service"></a>Service</li>
-          <li><a href="#pricing"></a>Pricing</li>
-        </ul>
-        <div class="nav_search" id="nav-search">
+        <!-- <div class="nav_search" id="nav-search">
           <input type="text" placeholder="search" />
           <span><i class="ri-search-2-line"></i></span>
-        </div>
+        </div> -->
       </nav>
     </header>
+
+    <main>
+      <section class="mainHero">
+        <div class="hero">
+          <p>Discovery Extraordinary<br />Comfrot in Hotels</p>
+          <img src="assets/Hero.png" alt="" />
+        </div>
+      </section>
+
+      <section class="section-booking">
+        <div class="booking">
+            <h2>Book a Room</h2>
+            <p>Discover the perfect space for you</p>
+            <div class="booking-form">
+                <div class="form-group">
+                  <p>Date</p>
+                    <!-- <label class="" for="date"><i class="ri-calendar-line"></i>Date</label> -->
+                    <input type="date" id="date" placeholder="Check Availability" />
+                </div>
+                <div class="form-group">
+                    <label for="adults"><i class="ri-group-line"></i>Person</label>
+                    <div class="person-selection">
+                        <label for="adults">Adults</label>
+                        <select id="adults">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <label for="children">Children</label> 
+                        <select id="children">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="bookBtn">BOOK NOW</button>
+            </div>
+        </div>
+    </section>
+    
+    </main>
 
     <script src="main.js"></script>
   </body>

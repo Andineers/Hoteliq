@@ -1,39 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --primary-color: #254d4d;
-    --text-ligth: #737373;
-    --extra-ligth: #f4f6f5;
-    --max-width: 1200px;
-    --header-font: 'Poppins';
-}
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
 }
 
-.section_container {
-    max-width: var(--max-width);
-    margin: auto;
-    padding: 5rem irem;
+body {
+    font-family: 'Poppins';
 }
 
-.section_header {
-    font-family: var(--header-font);
-    margin-bottom: 1 rem;
-    font-size: 2.5rem;
+.nav_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 64px;
+    position: fixed;
+    top: 15px;
+    transform: translateX(47%);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+}
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+  }
+  
+  
+  .logo {
+    width: 50px;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; 
+    background: rgba(1, 1, 81, 0.3);
+    filter: blur(2px); 
+  }
+
+  .hero p {
+    color: white;
+    top: 68%;
+    position: absolute;
+    font-size: 44px;
+    font-weight: bold;
+    margin-left: 200px;
+    z-index: 2;
+  }
+
+.booking {
+    background-color: #f0f8ff;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    max-width:1000px;
+    margin: 80px auto 0 auto;  
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    margin: 10px 0 20px;
+    color: #555;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.form-group p {
+    margin-top: -30px;
     font-weight: 600;
-    color: var(--primary-color);
+    margin-left: 100px;
 }
 
-.section_description {
-    font-size: 1.1rem;
-    color: var(--extra-ligth);
+label {
+    margin-bottom: 5px;
+    font-weight: 500; 
 }
 
-.logo {
-    width: 100px;
-    
+input, select {
+    display: flex;
+    padding: 10px ;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    width: 120px;
+    box-sizing: border-box; /* Menjaga ukuran tetap sesuai */
 }
+
+.person-selection {
+    display: flex;
+    gap: 20px; /* Memberikan jarak antar elemen */
+    justify-content: center;
+    width: 100%;
+}
+
+.selection-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.bookBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* margin-top: 0px; */
+}
+
+.bookBtn:hover {
+    background-color: #0056b3;
+}
+
